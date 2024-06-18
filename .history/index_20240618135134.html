@@ -8,15 +8,14 @@
 
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </head>
 
-
-<!-- Main Section -->
 <body class="bg-gray-900 text-white">
   <div id="fullpage">
-    <div class="section h-screen bg-gray-800 text-center">
+    <div class="section bg-gray-800 text-center">
       <h1 class="text-5xl animate__animated animate__bounce">Welcome to the Super Fancy Website!</h1>
       <p class="text-2xl mt-5">Scroll down to be amazed...</p>
     </div>
@@ -33,9 +32,6 @@
       <p class="text-xl mt-5" id="typed-output"></p>
     </div>
   </div>
-
-
-  <!-- Footer -->
   <footer class="text-center p-10 bg-gray-800">
     <nav>
       <a href="index.html" class="mx-5">Home</a>
@@ -44,15 +40,23 @@
       <a href="trends.html" class="mx-5">Trends</a>
     </nav>
   </footer>
-
-
-  <!-- Scripts -->
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.22/fullpage.min.js"></script>
+  <!-- fullPage.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <script>
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+      navigationPosition: 'right',
+      showActiveTooltip: true,
+      slidesNavigation: true,
+      slidesNavPosition: 'bottom',
+    });
+  </script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
   </script>
+  <!-- Typed.js Script -->
   <script>
     var typed = new Typed('#typed-output', {
       strings: ["Incredible!", "Amazing!", "Stupendous!"],
@@ -61,8 +65,6 @@
       loop: true
     });
   </script>
-
-
 </body>
 
 </html>

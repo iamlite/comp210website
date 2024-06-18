@@ -1,0 +1,63 @@
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Fancy Website</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="text-center p-10 bg-gray-800">
+        <h1 class="text-4xl animate__animated animate__bounce">Welcome to the Super Fancy Website!</h1>
+    </header>
+    <main class="p-10">
+        <section class="text-center my-20">
+            <h2 class="text-3xl mb-5" data-aos="fade-up">This website is...</h2>
+            <div id="typed-output" class="text-2xl"></div>
+        </section>
+        <section class="my-20 text-center">
+            <h2 class="text-3xl mb-5" data-aos="fade-right">Why it's fancy:</h2>
+            <p class="animate__animated animate__lightSpeedInLeft">It has awesome animations and cool styles!</p>
+        </section>
+        <section class="my-20 text-center">
+            <h2 class="text-3xl mb-5" data-aos="fade-left">What's next?</h2>
+            <p class="animate__animated animate__fadeInUp">Keep scrolling to see more amazing content!</p>
+        </section>
+    </main>
+    <footer class="text-center p-10 bg-gray-800">
+        <nav>
+            <a href="index.html" class="mx-5">Home</a>
+            <a href="concepts.html" class="mx-5">Concepts</a>
+            <a href="terms.html" class="mx-5">Terms</a>
+            <a href="trends.html" class="mx-5">Trends</a>
+        </nav>
+    </footer>
+    <!-- AOS Script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- Typed.js Script -->
+    <script>
+        var typed = new Typed('#typed-output', {
+            strings: ["Incredible!", "Amazing!", "Stupendous!"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+</html>

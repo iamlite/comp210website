@@ -6,3 +6,6 @@ dist
 .cache
 .env
 .DS_Store
+.history/
+.vscode/
+.DS_Store

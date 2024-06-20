@@ -1,24 +1,102 @@
-{
-  "terms": [
-    {"number": 1, "term": "Computer", "definition": "An electronic device for storing and processing data."},
-    {"number": 2, "term": "Input", "definition": "The data that is entered into a computer system."},
-    {"number": 3, "term": "Processing", "definition": "The manipulation of data by a computer."},
-    {"number": 4, "term": "Output", "definition": "The information produced by a computer after processing."},
-    {"number": 5, "term": "Storage", "definition": "The retention of data in a computer system."},
-    {"number": 6, "term": "Communications", "definition": "The transmission of data between computer systems."},
-    {"number": 7, "term": "Data", "definition": "Raw facts and figures without context."},
-    {"number": 8, "term": "Information", "definition": "Data that has been processed and has meaning."},
-    {"number": 9, "term": "Hardware", "definition": "The physical components of a computer system."},
-    {"number": 10, "term": "Software", "definition": "The programs and other operating information used by a computer."},
-    {"number": 11, "term": "Operating System", "definition": "The software that supports a computer's basic functions."},
-    {"number": 12, "term": "Boot", "definition": "The process of starting up a computer and loading the operating system."},
-    {"number": 13, "term": "Thin Client", "definition": "A lightweight computer that relies on a server for data processing."},
-    {"number": 14, "term": "Application Software", "definition": "Programs designed to perform specific tasks for users."},
-    {"number": 15, "term": "Embedded Computer", "definition": "A computer that is integrated into other devices to perform specific functions."},
-    {"number": 16, "term": "Mobile Device", "definition": "A portable computing device such as a smartphone or tablet."},
-    {"number": 17, "term": "Smartphone", "definition": "A mobile phone with advanced features and computing capability."},
-    {"number": 18, "term": "Media Tablet", "definition": "A portable touchscreen device used for multimedia consumption."},
-    {"number": 19, "term": "Personal Computer", "definition": "A general-purpose computer designed for individual use."},
-    {"number": 20, "term": "Portable Computer", "definition": "A computer designed to be easily moved and used in various locations."}
-  ]
-}
+[
+  {
+    "number": 1,
+    "term": "Computer",
+    "definition": "An electronic device for storing and processing data."
+  },
+  {
+    "number": 2,
+    "term": "Input",
+    "definition": "The data that is entered into a computer system."
+  },
+  {
+    "number": 3,
+    "term": "Processing",
+    "definition": "The manipulation of data by a computer."
+  },
+  {
+    "number": 4,
+    "term": "Output",
+    "definition": "The information produced by a computer after processing."
+  },
+  {
+    "number": 5,
+    "term": "Storage",
+    "definition": "The retention of data in a computer system."
+  },
+  {
+    "number": 6,
+    "term": "Communications",
+    "definition": "The transmission of data between computer systems."
+  },
+  {
+    "number": 7,
+    "term": "Data",
+    "definition": "Raw facts and figures without context."
+  },
+  {
+    "number": 8,
+    "term": "Information",
+    "definition": "Data that has been processed and has meaning."
+  },
+  {
+    "number": 9,
+    "term": "Hardware",
+    "definition": "The physical components of a computer system."
+  },
+  {
+    "number": 10,
+    "term": "Software",
+    "definition": "The programs and other operating information used by a computer."
+  },
+  {
+    "number": 11,
+    "term": "Operating System",
+    "definition": "The software that supports a computer's basic functions."
+  },
+  {
+    "number": 12,
+    "term": "Boot",
+    "definition": "The process of starting up a computer and loading the operating system."
+  },
+  {
+    "number": 13,
+    "term": "Thin Client",
+    "definition": "A lightweight computer that relies on a server for data processing."
+  },
+  {
+    "number": 14,
+    "term": "Application Software",
+    "definition": "Programs designed to perform specific tasks for users."
+  },
+  {
+    "number": 15,
+    "term": "Embedded Computer",
+    "definition": "A computer that is integrated into other devices to perform specific functions."
+  },
+  {
+    "number": 16,
+    "term": "Mobile Device",
+    "definition": "A portable computing device such as a smartphone or tablet."
+  },
+  {
+    "number": 17,
+    "term": "Smartphone",
+    "definition": "A mobile phone with advanced features and computing capability."
+  },
+  {
+    "number": 18,
+    "term": "Media Tablet",
+    "definition": "A portable touchscreen device used for multimedia consumption."
+  },
+  {
+    "number": 19,
+    "term": "Personal Computer",
+    "definition": "A general-purpose computer designed for individual use."
+  },
+  {
+    "number": 20,
+    "term": "Portable Computer",
+    "definition": "A computer designed to be easily moved and used in various locations."
+  }
+]

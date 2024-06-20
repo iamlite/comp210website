@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="pastel">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -7,13 +7,45 @@
   <title>Trends</title>
 </head>
 
-<body>
-  <div id="content">
-    <div class="text-4xl text-base-content">
+<body class="h-screen flex flex-col">
+  <div id="content" class="items-center flex flex-col">
+    <div class="flex text-4xl mt-10 text-base-content justify-center">
       <h1>Trends</h1>
     </div>
-    <div class="content mt-8">
-      <p>Replace this with actual content.</p>
+
+    <div class="carousel h-full items-center justify-center">
+      <div id="item1" class="carousel-item w-full h-full flex items-center justify-center">
+        <div class="text-center">
+          <h2 class="text-2xl">
+            1. Restaurant use of iPad for customers
+          </h2>
+          <p class="text-base">This is the first trend</p>
+        </div>
+      </div>
+
+      <div id="item2" class="carousel-item w-full h-full flex items-center justify-center">
+        <div class="text-center">
+          <h2 class="text-2xl">
+            2. Trend 2 Title
+          </h2>
+          <p class="text-base">This is the second trend</p>
+        </div>
+      </div>
+
+      <div id="item3" class="carousel-item w-full h-full flex items-center justify-center">
+        <div class="text-center">
+          <h2 class="text-2xl">
+            3. Trend 3 Title
+          </h2>
+          <p class="text-base">This is the third trend</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="join w-full justify-center mb-20">
+      <a href="#item1" class="btn btn-xs join-item btn-outline btn-primary">1</a>
+      <a href="#item2" class="btn btn-xs join-item btn-outline btn-secondary">2</a>
+      <a href="#item3" class="btn btn-xs join-item btn-outline btn-accent">3</a>
     </div>
   </div>
 </body>

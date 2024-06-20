@@ -25,10 +25,17 @@
     #93e7fb,
     #65c3c8
   );
-  border-radius: 18px; /* Ensure border radius matches */
+  border-radius: 18px;
   z-index: -1;
   animation: animatedgradient 5s ease alternate infinite;
   background-size: 300% 300%;
+}
+
+.theme-switcher-wrapper {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 10;
 }
 
 @keyframes animatedgradient {
@@ -43,10 +50,49 @@
   }
 }
 
-.theme-switcher-wrapper {
-  position: absolute;
-  bottom: 40px; /* Adjust as necessary */
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 10;
+/* Keyframes for fade out and fade in */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Keyframes for content sliding in */
+@keyframes slideIn {
+  from {
+    transform: translateY(50px); /* Start lower */
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Apply the fade-out animation */
+.fade-out {
+  animation: fadeOut 0.5s forwards; /* Adjust duration as necessary */
+}
+
+/* Apply the fade-in animation */
+.fade-in {
+  animation: fadeIn 0.5s forwards; /* Adjust duration as necessary */
+}
+
+/* Apply the slide-in animation */
+.slide-in {
+  animation: slideIn 1s forwards;
+}
+

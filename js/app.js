@@ -1,6 +1,32 @@
-// Typewriter Effect
-const typewriter = new Typewriter("#typewriter-text", { loop: false, delay: 75 });
-typewriter.typeString("A very well made, A+ material, website for COMP210").start();
+const typewriter = new Typewriter("#typewriter-text", {
+  loop: false,
+  delay: 75,
+  deleteSpeed: 50,
+});
+
+typewriter
+  .typeString("Welcome to the ultimate guide on ...")
+  .pauseFor(500)
+  .deleteChars(3)
+  .typeString("<strong>trendy tech terms</strong>")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Unravel the mysteries of modern concepts...")
+  .pauseFor(500)
+  .deleteChars(18)
+  .typeString("futuristic trends.")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("Brace yourself for knowledge.")
+  .pauseFor(1000)
+  .deleteAll()
+  .typeString("<em>Ready to dive in?</em>")
+  .pauseFor(500)
+  .typeString(" <strong>Let's go!</strong>")
+  .pauseFor(1000)
+  .start();
+
+
 
 // Confetti Effect
 function launchConfetti(event) {

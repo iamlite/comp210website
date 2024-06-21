@@ -2,52 +2,310 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trends</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trends</title>
 </head>
 
 <body class="h-screen flex flex-col">
-  <div id="content" class="items-center flex flex-col">
-    <div class="flex text-4xl mt-10 text-base-content justify-center">
-      <h1>Trends</h1>
-    </div>
-
-    <div class="carousel h-full items-center justify-center">
-      <div id="item1" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            1. Restaurant use of iPad for customers
-          </h2>
-          <p class="text-base">This is the first trend</p>
+    <div id="content" class="items-center flex flex-col">
+        <div class="flex text-4xl mt-10 mb-5 text-base-content justify-center">
+            <h1>Trends</h1>
         </div>
-      </div>
+        <div class="carousel h-full w-full items-center justify-center">
 
-      <div id="item2" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            2. Trend 2 Title
-          </h2>
-          <p class="text-base">This is the second trend</p>
+            <!-- First -->
+
+            <div id="item1" class="carousel-item w-full h-full flex items-center justify-center relative">
+                <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">1. iPads Enhancing Restaurant Experiences</h2>
+                    <p class="text-base mb-6">Many restaurants are integrating iPads for customer use to enhance dining
+                        experiences by offering a range of services such as digital menus, ordering, and payment
+                        options. This trend is driven by the need to improve efficiency, reduce wait times, and provide
+                        a more personalized dining experience.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Benefits of Using iPads in Restaurants</h3>
+                    <ul class="list-disc list-inside mb-6 text-left">
+                        <li class="mb-4"><strong>Interactive Menus:</strong> iPads provide dynamic, up-to-date menus
+                            that are easy to navigate. Customers can view detailed descriptions, images of dishes, and
+                            nutritional information.</li>
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <img src="https://assets.lightspeedhq.com/img/2018/10/0c6e2ecc-increase-order-size.jpg"
+                                alt="iPad Menu" class="w-full h-56 object-cover mask mask-squircle shadow-xl">
+                            <img src="https://www.digitaltrends.com/wp-content/uploads/2014/12/Cotto_iPad_OTG_LR.jpg?resize=1200%2C630&p=1"
+                                alt="Ordering on iPad" class="w-full h-56 object-cover mask mask-squircle shadow-xl">
+                        </div>
+                        <li class="mb-4"><strong>Streamlined Ordering Process:</strong> Customers can place their orders
+                            directly through the iPad, minimizing errors. Special requests and dietary preferences can
+                            be easily managed.</li>
+                        <div class="grid grid-cols-2 gap-6 mb-6">
+                            <img src="https://thebridge.jp/en/wp-content/uploads/2013/04/sushi-ipad.png"
+                                alt="Interactive iPad Experience"
+                                class="w-full h-56 object-cover mask mask-squircle shadow-xl">
+                            <img src="https://www.touchbistro.com/wp-content/uploads/2021/01/restaurant-ipad-inset-4.jpg"
+                                alt="iPad Payment" class="w-full h-56 object-cover mask mask-squircle shadow-xl">
+                        </div>
+                        <li class="mb-4"><strong>Enhanced Customer Experience:</strong> Personalized recommendations
+                            based on past orders and preferences. Interactive elements such as videos and animations
+                            make the dining experience more engaging.</li>
+                        <li class="mb-4"><strong>Efficient Payment Options:</strong> Integrated payment systems allow
+                            for quick and secure transactions. Supports multiple payment methods including credit/debit
+                            cards, mobile wallets, and contactless payments.</li>
+                        <div class="grid grid-cols-3 gap-6 mb-6">
+                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/apple-pay.svg"
+                                alt="Apple Pay" class="w-full h-12 object-contain">
+                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/google-pay.svg"
+                                alt="Google Pay" class="w-full h-12 object-contain">
+                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/paypal.svg"
+                                alt="PayPal" class="w-full h-12 object-contain">
+                        </div>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Impact on Restaurant Operations</h3>
+                    <div class="grid grid-cols-2 gap-6 mb-6">
+                        <p class="text-base"><strong>Reduced Wait Times:</strong> Orders are sent directly to the
+                            kitchen, reducing the time taken for servers to relay orders. Faster table turnover rates,
+                            leading to increased revenue.</p>
+                        <p class="text-base"><strong>Improved Accuracy:</strong> Minimizes human errors in taking
+                            orders, leading to better customer satisfaction. Real-time updates on menu availability help
+                            manage customer expectations.</p>
+                    </div>
+                    <p class="text-base mb-6"><strong>Data Collection and Analytics:</strong> Collects valuable data on
+                        customer preferences and ordering habits. Helps in optimizing menu offerings and marketing
+                        strategies.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Adoption During COVID-19</h3>
+                    <p class="text-base mb-6">The use of iPads in restaurants gained momentum during the COVID-19
+                        pandemic as they facilitated contactless interactions, enhancing safety for both customers and
+                        staff. This shift towards digitalization has continued post-pandemic, emphasizing the long-term
+                        benefits of integrating technology into restaurant operations.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Interesting Links</h3>
+                    <p class="text-base mb-2"><a
+                            href="https://madmobile.com/blog/ipad-pos-system-improves-customer-experience/"
+                            class="text-accent">How an iPad POS System Can Improve Restaurant Experiences</a></p>
+                    <p class="text-base mb-2"><a href="https://ca.bouncepad.com/blogs/news/restaurant-tablet-revolution"
+                            class="text-accent">How Tablets are Revolutionizing Restaurant Service</a></p>
+                    <p class="text-base mb-2"><a
+                            href="https://www.touchbistro.com/blog/why-big-businesses-are-choosing-to-run-their-companies-on-an-ipad/"
+                            class="text-accent">15 Reasons Why You Need a Restaurant iPad POS for Your Business</a></p>
+                    <p class="text-base mb-2"><a href="https://www.eats365pos.com/ca" class="text-accent">Eats360 POS -
+                            A Canadian company that offers ipad software to restaurants</a></p>
+                    <br>
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
+                </div>
+            </div>
+
+            <!-- Second -->
+
+            <div id="item2" class="carousel-item w-full h-full flex items-center justify-center relative">
+                <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">2. Tiny PCs</h2>
+                    <p class="text-base mb-6">Tiny PCs, also known as mini PCs or small form factor (SFF) computers, are
+                        becoming increasingly popular. These compact devices pack significant computing power into a
+                        small chassis, making them ideal for home entertainment, office tasks, and even gaming. They
+                        offer space-saving solutions without compromising on performance.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Benefits of Tiny PCs</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="mb-4">
+                            <p class="text-base"><strong>Space-saving Design:</strong> Tiny PCs take up minimal space,
+                                making them perfect for small desks and clutter-free setups. Despite their size, they
+                                often include powerful hardware components.</p>
+                            <img src="https://static1.xdaimages.com/wordpress/wp-content/uploads/wm/2024/03/geekom-mini-it13-01.jpg"
+                                alt="Tiny PC on Desk" class="w-full h-56 mask mask-squircle shadow-xl mt-4">
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-base"><strong>Energy Efficiency:</strong> These devices consume less power
+                                compared to traditional desktops, which not only helps in reducing electricity bills but
+                                also has a positive impact on the environment.</p>
+                            <img src="https://intelcorp.scene7.com/is/image/intelcorp/mini-pc-consume-less-16x9:864-486"
+                                alt="Energy Efficient Tiny PC" class="w-full h-56 mask mask-squircle shadow-xl mt-4">
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-base"><strong>Portability:</strong> Tiny PCs are highly portable, making them
+                                ideal for users who need to move their workstation frequently or for businesses that
+                                require flexible office setups.</p>
+                            <img src="https://i.pcmag.com/imagery/reviews/06Hhy7Tq7TovbpNakYlLJVK-1.fit_lim.size_840x473.v1650989464.jpg"
+                                alt="Portable Tiny PC" class="w-full h-56 mask mask-squircle shadow-xl mt-4">
+                        </div>
+                        <div class="mb-4">
+                            <p class="text-base"><strong>Versatility:</strong> From home entertainment systems to office
+                                workstations and even gaming rigs, tiny PCs can be customized to meet various needs.</p>
+                            <img src="https://cdn.thewirecutter.com/wp-content/media/2022/12/pcmini-2048px-0027-3x2-1.jpg"
+                                alt="Versatile Tiny PC" class="w-full h-56 mask mask-squircle shadow-xl mt-4">
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Impact on Various Sectors</h3>
+                    <div class="mb-6">
+                        <p class="text-base mb-4"><strong>Home Entertainment:</strong> Tiny PCs are popular as media
+                            centers due to their small size and powerful capabilities. They can stream high-definition
+                            content, run games, and manage home automation systems.</p>
+                        <p class="text-base mb-4"><strong>Business Use:</strong> In office environments, tiny PCs
+                            provide efficient and powerful workstations without taking up much space, making them ideal
+                            for modern, open-plan offices.</p>
+                        <p class="text-base mb-6"><strong>Educational Use:</strong> Their portability and compact size
+                            make tiny PCs perfect for educational purposes, allowing students to carry powerful
+                            computing devices with them.</p>
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Interesting Links</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <p class="text-base mb-2"><a href="https://en.wikipedia.org/wiki/Next_Unit_of_Computing"
+                                class="text-accent">Intel NUC Overview</a></p>
+                        <p class="text-base mb-2"><a href="https://www.techradar.com/best/mini-pcs"
+                                class="text-accent">Best Mini PCs 2024</a></p>
+                        <p class="text-base mb-2"><a
+                                href="https://www.seeedstudio.com/blog/2020/11/13/what-is-a-mini-pc-things-you-should-know-before-purchasing/"
+                                class="text-accent">What is a Mini PC?</a></p>
+                        <p class="text-base mb-2"><a href="https://www.ebuyer.com/blog/desktop-pc-v-mini-pc/"
+                                class="text-accent">Desktop PC vs mini PC</a></p>
+                    </div>
+                    <br>
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
+                </div>
+            </div>
+
+            <!-- Third -->
+
+            <div id="item3" class="carousel-item w-full h-full flex items-center justify-center relative">
+                <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+                    <h2 class="text-2xl font-bold mb-6 text-primary">3. Virtualization: Maximizing Resource Efficiency
+                    </h2>
+                    <p class="text-base mb-6">Virtualization technology allows for the creation of virtual versions of
+                        physical hardware resources, such as servers, storage devices, and network resources. This trend
+                        is driving efficiencies and cost savings in IT operations, enabling better resource management
+                        and scalability. It is widely used in cloud computing, data centers, and development
+                        environments.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">What is Virtualization?</h3>
+                    <p class="text-base mb-6">Virtualization is the process of creating a virtual version of something,
+                        such as a server, a storage device, or network resources. It allows multiple virtual systems to
+                        run on a single physical system, sharing the resources of that single physical system. This
+                        approach helps to maximize the utilization of physical resources and offers greater flexibility
+                        and efficiency.</p>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Benefits of Virtualization</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                        <div class="flex items-start mb-4">
+                            <i class="bi bi-cash-stack text-primary text-4xl mr-4"></i>
+                            <div>
+                                <p class="text-base"><strong>Cost Savings:</strong> Virtualization reduces the need for
+                                    physical hardware, leading to significant cost savings on equipment, maintenance,
+                                    and energy consumption.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="bi bi-bar-chart-line text-primary text-4xl mr-4"></i>
+                            <div>
+                                <p class="text-base"><strong>Improved Resource Utilization:</strong> Virtualization
+                                    enables better utilization of physical resources by allowing multiple virtual
+                                    machines to run on a single physical machine.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="bi bi-arrows-expand text-primary text-4xl mr-4"></i>
+                            <div>
+                                <p class="text-base"><strong>Scalability:</strong> Virtualization allows businesses to
+                                    quickly scale their IT resources up or down based on demand, making it easier to
+                                    manage workloads and applications.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="bi bi-shield-lock text-primary text-4xl mr-4"></i>
+                            <div>
+                                <p class="text-base"><strong>Disaster Recovery:</strong> Virtual machines can be easily
+                                    backed up and restored, improving disaster recovery capabilities and minimizing
+                                    downtime.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="text-xl font-semibold mb-4 text-secondary">Popular Virtualization Software</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://supportfly.io/wp-content/uploads/2023/06/Supportfly-Microsoft-Hyper-V-Management-Experts.webp" alt="Microsoft Hyper-V" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Microsoft Hyper-V</h2>
+                                <p>A robust virtualization platform built into Windows Server, providing powerful features for virtualization, storage, and networking.</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Virtualbox_logo.png/480px-Virtualbox_logo.png" alt="Oracle VM VirtualBox" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Oracle VM VirtualBox</h2>
+                                <p>An open-source virtualization tool that allows users to run multiple operating systems on a single machine, popular for its ease of use and flexibility.</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://www.virtualbox.org/" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-09/kvm-logo-rwd.png" alt="KVM" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">KVM (Kernel-based Virtual Machine)</h2>
+                                <p>An open-source virtualization solution for Linux on x86 hardware, including virtualization extensions (Intel VT or AMD-V).</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://www.linux-kvm.org/" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://media.printables.com/media/prints/543748/images/4374616_04ed4585-3662-4652-a84d-04621cb9f709/thumbs/inside/1280x960/png/proxmox.webp" alt="Proxmox VE" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Proxmox VE</h2>
+                                <p>A complete open-source server management platform for enterprise virtualization, combining KVM and LXC technologies.</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://www.proxmox.com/en/" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png" alt="Docker" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Docker</h2>
+                                <p>A platform designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all parts it needs.</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://www.docker.com/" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card w-96 bg-base-100 shadow-xl">
+                            <figure class='my-6'><img src="https://www.parallels.com/static/pl/fileadmin/res/img/about/brand/PDFM-icon.png" alt="Parallels" class="object-contain h-40" /></figure>
+                            <div class="card-body">
+                                <h2 class="card-title">Parallels</h2>
+                                <p>A cross-platform virtualization solution that allows users to run Windows applications on a Mac, providing seamless integration and high performance.</p>
+                                <div class="card-actions justify-end">
+                                    <a href="https://www.parallels.com/" class="btn btn-primary">Learn More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+                <div
+                    class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
+                </div>
+            </div>
+
+
+            <!-- End -->
+
         </div>
-      </div>
-
-      <div id="item3" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            3. Trend 3 Title
-          </h2>
-          <p class="text-base">This is the third trend</p>
+        <div class="join w-full justify-center my-20">
+            <a href="#item1" class="btn join-item btn-outline btn-primary">1</a>
+            <a href="#item2" class="btn join-item btn-outline btn-secondary">2</a>
+            <a href="#item3" class="btn join-item btn-outline btn-accent">3</a>
         </div>
-      </div>
     </div>
-
-    <div class="join w-full justify-center mb-20">
-      <a href="#item1" class="btn btn-xs join-item btn-outline btn-primary">1</a>
-      <a href="#item2" class="btn btn-xs join-item btn-outline btn-secondary">2</a>
-      <a href="#item3" class="btn btn-xs join-item btn-outline btn-accent">3</a>
-    </div>
-  </div>
 </body>
 
 </html>

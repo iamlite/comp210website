@@ -9,57 +9,324 @@
 
 <body class="h-screen flex flex-col">
   <div id="content" class="items-center flex flex-col">
-    <div class="flex text-4xl mt-10 text-base-content justify-center">
+    <div class="flex text-4xl my-10 text-base-content justify-center">
       <h1>Concepts</h1>
     </div>
 
     <div class="carousel h-full items-center justify-center">
-      <div id="item1" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            1. Distance Learning
-          </h2>
-          <p class="text-base">content goes here</p>
+
+      <div id="item1" class="carousel-item w-full h-full flex items-center justify-center relative">
+        <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+          <h2 class="text-2xl font-bold mb-6 text-primary">1. Distance Learning</h2>
+          <p class="text-base mb-6">Distance learning is a mode of education that allows students to study remotely
+            without being physically present in a traditional classroom setting. This approach leverages online
+            platforms and digital resources to deliver educational content, enabling flexible learning schedules.
+            Students can access lectures, readings, and assignments online, and communicate with instructors and peers
+            through discussion forums and video conferencing.</p>
+
+          <div class="flex flex-col items-center mb-6">
+            <div class="mb-4 flex flex-col items-center">
+              <img src="/img/aulogo.png" alt="Athabasca University"
+                class="w-64 h-40 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base text-center"><strong>Athabasca University:</strong> A leader in distance education,
+                offering a wide range of undergraduate and graduate programs that can be completed entirely online.</p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Examples of Distance Learning Platforms</h3>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+
+            <div class="mb-4">
+              <img src="/img/moodlelogo.svg" alt="Moodle" class="w-full h-40 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Moodle:</strong> An open-source learning platform designed to provide
+                educators, administrators, and learners with a single robust, secure, and integrated system to create
+                personalized learning environments.</p>
+                <p class="text-base mb-2"><a href="https://moodle.org"
+                  class="text-accent">Moodle.org</a></p>
+            </div>
+
+            <div class="mb-4">
+              <img src="/img/bblogo.png" alt="Blackboard" class="w-full h-40 object-contain mb-2">
+              <p class="text-base"><strong>Blackboard:</strong> A comprehensive LMS that provides a robust and secure
+                platform for online education and training. It supports collaboration, content management, and
+                assessment tools.</p>
+                <p class="text-base mb-2"><a href="https://www.blackboard.com"
+                  class="text-accent">BlackBoard.com</a></p>
+            </div>
+
+            <div class="mb-4">
+              <img src="/img/bslogo.png" alt="Brightspace" class="w-full h-40 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Brightspace:</strong> A cloud-based learning management system (LMS) by D2L
+                that offers a flexible and user-friendly platform for delivering online courses and training programs.
+              </p>
+              <p class="text-base mb-2"><a href="https://www.d2l.com/brightspace/"
+                class="text-accent">d2l.com</a></p>
+            </div>
+
+          </div>
+
+
+        </div>
+        <br>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
         </div>
       </div>
 
-      <div id="item2" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            2. Authentication
-          </h2>
-          <p class="text-base">content goes here</p>
+      <div id="item2" class="carousel-item w-full h-full flex items-center justify-center relative">
+        <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+          <h2 class="text-2xl font-bold mb-6 text-primary">2. Authentication</h2>
+          <p class="text-base mb-6">Authentication is the process of verifying the identity of a user or system. It is a
+            critical aspect of security, ensuring that only authorized individuals can access sensitive information or
+            systems. Various methods of authentication are used to secure data and systems, ranging from simple
+            passwords to advanced biometric systems.</p>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Examples of Authentication Methods</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="flex flex-col items-center mb-4">
+              <i class="bi bi-lock-fill text-primary text-5xl mb-4"></i>
+              <p class="text-base text-left"><strong>Password Authentication:</strong> The most common method, where
+                users provide a username and password to gain access.</p>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <i class="bi bi-fingerprint text-primary text-5xl mb-4"></i>
+              <p class="text-base text-left"><strong>Biometric Authentication:</strong> Uses unique biological traits
+                like fingerprints, facial recognition, or iris scans to verify identity.</p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Advanced Authentication Techniques</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <div class="flex flex-col items-center mb-4">
+              <i class="bi bi-shield-lock-fill text-primary text-5xl mb-4"></i>
+              <p class="text-base text-left"><strong>Multi-Factor Authentication (MFA):</strong> Combines two or more
+                authentication methods to enhance security. For example, a password and a fingerprint scan.</p>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <i class="bi bi-key-fill text-primary text-5xl mb-4"></i>
+              <p class="text-base text-left"><strong>Token-Based Authentication:</strong> Uses a token, which can be a
+                physical device or a software token, to authenticate users. Common examples include RSA SecurID tokens
+                and software tokens generated by apps like Google Authenticator.</p>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Interesting Links</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <p class="text-base mb-2"><a
+                href="https://aws.amazon.com/what-is/mfa/#:~:text=Multi%2Dfactor%20authentication%20acts%20as,convenient%20access%20to%20authorized%20users."
+                class="text-accent">Multi-Factor Authentication Explained</a></p>
+            <p class="text-base mb-2"><a href="https://www.onespan.com/topics/biometric-authentication"
+                class="text-accent">Biometric Authentication: Definition, trends, pro and cons, use cases and myths</a>
+            </p>
+            <p class="text-base mb-2"><a
+                href="https://www.cloudflare.com/en-ca/learning/access-management/token-based-authentication/"
+                class="text-accent">What is token-based authentication?</a></p>
+            <p class="text-base mb-2"><a href="https://www.onelogin.com/learn/how-single-sign-on-works"
+                class="text-accent">How Does Single Sign-On Work?</a></p>
+          </div>
+        </div>
+        <br>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
         </div>
       </div>
 
-      <div id="item3" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            3. Web Browsers
-          </h2>
-          <p class="text-base">content goes here</p>
+      <div id="item3" class="carousel-item w-full h-full flex items-center justify-center relative">
+        <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+          <h2 class="text-2xl font-bold mb-6 text-primary">3. Web Browsers</h2>
+          <p class="text-base mb-6">A web browser is a software application used to access and navigate the World Wide
+            Web. Browsers retrieve, present, and traverse information resources on the internet. They interpret and
+            display HTML documents, allowing users to view websites, interact with web applications, and consume online
+            content.</p>
+          <p class="text-base mb-6">Web browsers have evolved significantly over the years, offering various features to
+            enhance user experience. These features include tabbed browsing, private browsing modes, synchronization
+            across devices, and support for extensions and plugins.</p>
+          <p class="text-base mb-6">Security is a critical aspect of web browsers. Modern browsers come with built-in
+            security features such as phishing and malware protection, sandboxing, and automatic updates to protect
+            users from emerging threats.</p>
+
+          <h3 class="text-xl font-semibold mb-8 text-secondary">Popular Web Browsers</h3>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6 mb-10">
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/chrome.png" alt="Google Chrome"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Google Chrome</strong></p>
+              <a href="https://www.google.com/chrome/" class="text-accent mt-2">Visit Google Chrome</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/firefox.png" alt="Mozilla Firefox"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Mozilla Firefox</strong></p>
+              <a href="https://www.mozilla.org/firefox/" class="text-accent mt-2">Visit Mozilla Firefox</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/opera.png" alt="Opera" class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Opera</strong></p>
+              <a href="https://www.opera.com/" class="text-accent mt-2">Visit Opera</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/safari.png" alt="Safari"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Safari</strong></p>
+              <a href="https://www.apple.com/safari/" class="text-accent mt-2">Visit Safari</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/edge.png" alt="Microsoft Edge"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Microsoft Edge</strong></p>
+              <a href="https://www.microsoft.com/edge" class="text-accent mt-2">Visit Microsoft Edge</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/brave.png" alt="Brave" class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Brave</strong></p>
+              <a href="https://brave.com/" class="text-accent mt-2">Visit Brave</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/vivaldi.png" alt="Vivaldi"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Vivaldi</strong></p>
+              <a href="https://vivaldi.com/" class="text-accent mt-2">Visit Vivaldi</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/tor.png" alt="Tor Browser"
+                class="w-16 h-16 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base"><strong>Tor Browser</strong></p>
+              <a href="https://www.torproject.org/" class="text-accent mt-2">Visit Tor Browser</a>
+            </div>
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Interesting Links</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <p class="text-base mb-2"><a href="https://www.mozilla.org/en-CA/firefox/browsers/what-is-a-browser/"
+                class="text-accent">What is a web browser?</a></p>
+            <p class="text-base mb-2"><a
+                href="https://www.freecodecamp.org/news/web-application-security-understanding-the-browser-5305ed2f1dac/"
+                class="text-accent">How Browsers Work</a></p>
+          </div>
+        </div>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
         </div>
       </div>
 
-      <div id="item4" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            4. Mobile Payment Systems
-          </h2>
-          <p class="text-base">content goes here</p>
+
+      <div id="item4" class="carousel-item w-full h-full flex items-center justify-center relative">
+        <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+          <h2 class="text-2xl font-bold mb-6 text-primary">4. Mobile Payment Systems</h2>
+          <p class="text-base mb-6">Mobile payment systems allow users to make financial transactions using their mobile
+            devices. These systems provide a convenient and secure way to pay for goods and services, eliminating the
+            need for cash or physical credit cards. Users can link their bank accounts or credit cards to mobile payment
+            apps, and make payments through Near Field Communication (NFC), QR codes, or direct transfers.</p>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Popular Mobile Payment Systems</h3>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-6 mb-10">
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_apple_pay.svg" alt="Apple Pay" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Apple Pay</strong></p>
+              <a href="https://www.apple.com/apple-pay/" class="text-accent mt-2">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_google_pay.svg" alt="Google Pay" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Google Pay</strong></p>
+              <a href="https://pay.google.com/" class="text-accent mt-2">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_paypal.svg" alt="PayPal" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>PayPal</strong></p>
+              <a href="https://www.paypal.com/" class="text-accent mt-2">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_samsung_pay.svg" alt="Samsung Pay" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Samsung Pay</strong></p>
+              <a href="https://www.samsung.com/us/samsung-pay/" class="text-accent mt-2">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_alipay.svg" alt="Alipay" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>Alipay</strong></p>
+              <a href="https://intl.alipay.com/" class="text-accent mt-2">Learn More</a>
+            </div>
+            <div class="flex flex-col items-center mb-4">
+              <img src="img/card_wechat_pay.svg" alt="WeChat Pay" class="w-32 h-32 object-contain shadow-xl mb-2">
+              <p class="text-base"><strong>WeChat Pay</strong></p>
+              <a href="https://pay.weixin.qq.com/index.php/public/wechatpay" class="text-accent mt-2">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-12 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
         </div>
       </div>
 
-      <div id="item5" class="carousel-item w-full h-full flex items-center justify-center">
-        <div class="text-center">
-          <h2 class="text-2xl">
-            5. Tech Clothing
-          </h2>
-          <p class="text-base">content goes here</p>
+
+      <div id="item5" class="carousel-item w-full h-full flex items-center justify-center relative">
+        <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
+          <h2 class="text-2xl font-bold mb-6 text-primary">5. Tech Clothing</h2>
+          <p class="text-base mb-6">Tech clothing refers to garments designed specifically to hold, support, or
+            integrate with technology. This type of clothing includes features such as built-in pockets for devices,
+            charging capabilities, and fabrics that enhance the usability of tech gadgets. While the concept has evolved
+            over the years, it remains relevant for those seeking functional and convenient ways to carry and use their
+            technology.</p>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Practical</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/phonepocket.jpg" alt="Jacket with Pockets"
+                class="w-64 h-40 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base text-left"><strong>Jacket with Device Pockets:</strong> Jackets that come with
+                specially designed pockets to hold smartphones, tablets, and other devices securely.</p>
+            </div>
+
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/chargerbag.jpg" alt="Backpack with Charging Port"
+                class="w-64 h-40 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base text-left"><strong>Backpack with Charging Ports:</strong> Backpacks equipped with USB
+                charging ports and compartments for power banks to keep devices charged on the go.</p>
+            </div>
+
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Advanced</h3>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+
+
+
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/solar.jpg" alt="Sun-Powered Textile"
+                class="w-64 h-40 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base text-left"><strong>Sun-Powered Textile:</strong> Researchers at Aalto University
+                created a jacket with hidden solar panels that harvest solar energy to power wearable devices. The
+                jacket is machine-washable and designed to be energy-autonomous.</p>
+            </div>
+
+            <div class="flex flex-col items-center mb-4">
+              <img src="/img/emotion.jpg" alt="Polysensory Garment"
+                class="w-64 h-40 object-contain mask mask-squircle shadow-xl mb-2">
+              <p class="text-base text-left"><strong>Polysensory Garment:</strong> Designer Iga Węglińska created
+                garments that respond to stress levels by changing color or flashing lights. These tops use sensors to
+                detect temperature, heart rate, and skin response to indicate anxiety.</p>
+            </div>
+
+          </div>
+
+          <h3 class="text-xl font-semibold mb-4 text-secondary">Interesting Links</h3>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
+            <p class="text-base mb-2"><a
+                href="https://www.dezeen.com/2021/10/18/aalto-university-students-jacket-hidden-solar-panels-design/ "
+                class="text-accent">Solar Clothing</a></p>
+            <p class="text-base mb-2"><a
+                href="https://www.dezeen.com/2021/12/12/iga-weglinska-emotional-clothing-stress-body-changes/"
+                class="text-accent">Emotion-Reactive Clothing</a></p>
+          </div>
+        </div>
+        <br>
+        <div
+          class="absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t from-base-100 to-transparent pointer-events-none">
         </div>
       </div>
-
-
     </div>
 
     <div class="join w-full justify-center mb-20">

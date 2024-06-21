@@ -33,8 +33,8 @@
 
 .theme-switcher-wrapper {
   position: absolute;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 50px;
   z-index: 10;
 }
 
@@ -95,4 +95,3 @@
 .slide-in {
   animation: slideIn 1s forwards;
 }
-

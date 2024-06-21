@@ -48,6 +48,8 @@ document.querySelectorAll("#links a").forEach(link => {
     const contentDiv = document.getElementById("content");
     const typerDiv = document.getElementById("typer");
 
+    console.log("Navigating to:", currentPage);
+
     if (currentPage === 'index') {
       resetToHome();
     } else {
@@ -59,14 +61,13 @@ document.querySelectorAll("#links a").forEach(link => {
         const newContent = tempDiv.querySelector('#content').innerHTML;
 
         contentDiv.innerHTML = newContent;
-        contentDiv.classList.add('h-full'); // Add h-full when content is added
+        contentDiv.classList.add('h-full');
         updateMenuLinks(currentPage);
 
         if (currentPage === 'terms') {
           loadTermsContent();
         }
 
-        // Ensure the first carousel item is shown by default
         if (currentPage === 'trends') {
           const carouselItems = document.querySelectorAll('.carousel-item');
           carouselItems.forEach((item, index) => {
@@ -82,7 +83,6 @@ document.querySelectorAll("#links a").forEach(link => {
           });
         }
 
-        // Ensure the first carousel item is shown by default
         if (currentPage === 'concepts') {
           const carouselItems = document.querySelectorAll('.carousel-item');
           carouselItems.forEach((item, index) => {
@@ -99,7 +99,7 @@ document.querySelectorAll("#links a").forEach(link => {
         }
 
         gsap.to([menuWrapper, contentDiv], { opacity: 1, duration: 0.5 });
-        typerDiv.classList.add('hidden'); // Ensure typer is hidden on other pages
+        typerDiv.classList.add('hidden');
         document.getElementById("main-container").classList.add('justify-start');
         document.getElementById("main-container").classList.remove('justify-center');
       }});
@@ -113,10 +113,10 @@ function resetToHome() {
   const typerDiv = document.getElementById("typer");
   const menuWrapper = document.getElementById("menu-wrapper");
 
-  contentDiv.innerHTML = ''; // Clear content for the home page
-  contentDiv.classList.remove('h-full'); // Remove h-full when resetting to home
+  contentDiv.innerHTML = ''; 
+  contentDiv.classList.remove('h-full');
 
-  updateMenuLinks('index'); // Ensure links are updated when resetting to home
+  updateMenuLinks('index');
 
   typerDiv.classList.remove('hidden');
   gsap.to(typerDiv, { opacity: 1, duration: 0.5 });
@@ -193,6 +193,7 @@ document.getElementById('home-link').addEventListener('click', (event) => {
 // This ensures that the initial state is set correctly when the document is loaded
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop().split(".").shift();
+  console.log("Current Page on Load:", currentPage);
   updateMenuLinks(currentPage);
   if (currentPage === "index") {
     resetToHome();

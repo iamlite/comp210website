@@ -34,7 +34,7 @@ function updateMenuLinks(currentPage) {
       link.classList.add("hidden");
     } else {
       link.classList.remove("hidden");
-      tl.fromTo(link, { opacity: 0 }, { opacity: 1, duration: 0.5 });
+      tl.fromTo(link, { opacity: 0 }, { opacity: 1, duration: 0.3 });
     }
   });
 
@@ -122,23 +122,24 @@ function resetToHome() {
   updateMenuLinks('index');
 
   typerDiv.classList.remove('hidden');
-  gsap.to(typerDiv, { opacity: 1, duration: 0.5 });
+  gsap.to(typerDiv, { opacity: 1, duration: 0.3 });
   gsap.to(menuWrapper, { justifyContent: "center", opacity: 1, duration: 1 });
   document.getElementById("main-container").classList.add('justify-center');
   document.getElementById("main-container").classList.remove('justify-start');
 }
 
 // Theme switcher with GSAP
+const innerBody = document.getElementById("inner-body");
 document.getElementById("theme-controller").addEventListener("change", () => {
-  gsap.to("body", {
+  gsap.to(innerBody, {
     opacity: 0,
-    duration: 0.5,
+    duration: 0.3,
     onComplete: () => {
-      document.documentElement.setAttribute(
+      innerBody.setAttribute(
         "data-theme",
         document.getElementById("theme-controller").checked ? "dark" : "pastel"
       );
-      gsap.to("body", { opacity: 1, duration: 0.5 });
+      gsap.to(innerBody, { opacity: 1, duration: 0.3 });
     },
   });
 });

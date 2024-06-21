@@ -51,13 +51,10 @@
                         <li class="mb-4"><strong>Efficient Payment Options:</strong> Integrated payment systems allow
                             for quick and secure transactions. Supports multiple payment methods including credit/debit
                             cards, mobile wallets, and contactless payments.</li>
-                        <div class="grid grid-cols-3 gap-6 mb-6">
-                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/apple-pay.svg"
-                                alt="Apple Pay" class="w-full h-12 object-contain">
-                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/wallets/google-pay.svg"
-                                alt="Google Pay" class="w-full h-12 object-contain">
-                            <img src="https://raw.githubusercontent.com/datatrans/payment-logos/master/assets/apm/paypal.svg"
-                                alt="PayPal" class="w-full h-12 object-contain">
+                        <div class="grid grid-cols-3 gap-6 my-6">
+                            <img src="/img/card_apple_pay.svg" alt="Apple Pay" class="w-full h-20 object-contain">
+                            <img src="img/card_google_pay.svg" alt="Google Pay" class="w-full h-20 object-contain">
+                            <img src="img/card_paypal.svg" alt="PayPal" class="w-full h-20 object-contain">
                         </div>
                     </ul>
 
@@ -173,6 +170,7 @@
 
             <!-- Third -->
 
+
             <div id="item3" class="carousel-item w-full h-full flex items-center justify-center relative">
                 <div class="relative text-center p-6 mx-20 overflow-y-auto h-full">
                     <h2 class="text-2xl font-bold mb-6 text-primary">3. Virtualization: Maximizing Resource Efficiency
@@ -227,63 +225,84 @@
                     </div>
 
                     <h3 class="text-xl font-semibold mb-4 text-secondary">Popular Virtualization Software</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 my-6">
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://supportfly.io/wp-content/uploads/2023/06/Supportfly-Microsoft-Hyper-V-Management-Experts.webp" alt="Microsoft Hyper-V" class="object-contain h-40" /></figure>
+                    <div
+                        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-6 items-center justify-items-center">
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://supportfly.io/wp-content/uploads/2023/06/Supportfly-Microsoft-Hyper-V-Management-Experts.webp"
+                                    alt="Microsoft Hyper-V" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">Microsoft Hyper-V</h2>
-                                <p>A robust virtualization platform built into Windows Server, providing powerful features for virtualization, storage, and networking.</p>
-                                <div class="card-actions justify-end">
-                                    <a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server" class="btn btn-primary">Learn More</a>
+                                <p>A robust virtualization platform built into Windows Server, providing powerful
+                                    features for virtualization, storage, and networking.</p>
+                                <div class="card-actions justify-center">
+                                    <a href="https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/hyper-v-on-windows-server"
+                                        class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Virtualbox_logo.png/480px-Virtualbox_logo.png" alt="Oracle VM VirtualBox" class="object-contain h-40" /></figure>
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Virtualbox_logo.png/480px-Virtualbox_logo.png"
+                                    alt="Oracle VM VirtualBox" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">Oracle VM VirtualBox</h2>
-                                <p>An open-source virtualization tool that allows users to run multiple operating systems on a single machine, popular for its ease of use and flexibility.</p>
-                                <div class="card-actions justify-end">
+                                <p>An open-source virtualization tool that allows users to run multiple operating
+                                    systems on a single machine, popular for its ease of use and flexibility.</p>
+                                <div class="card-actions justify-center">
                                     <a href="https://www.virtualbox.org/" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-09/kvm-logo-rwd.png" alt="KVM" class="object-contain h-40" /></figure>
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://www.intel.com/content/dam/www/central-libraries/us/en/images/2022-09/kvm-logo-rwd.png"
+                                    alt="KVM" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">KVM (Kernel-based Virtual Machine)</h2>
-                                <p>An open-source virtualization solution for Linux on x86 hardware, including virtualization extensions (Intel VT or AMD-V).</p>
-                                <div class="card-actions justify-end">
+                                <p>An open-source virtualization solution for Linux on x86 hardware, including
+                                    virtualization extensions (Intel VT or AMD-V).</p>
+                                <div class="card-actions justify-center">
                                     <a href="https://www.linux-kvm.org/" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://media.printables.com/media/prints/543748/images/4374616_04ed4585-3662-4652-a84d-04621cb9f709/thumbs/inside/1280x960/png/proxmox.webp" alt="Proxmox VE" class="object-contain h-40" /></figure>
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://media.printables.com/media/prints/543748/images/4374616_04ed4585-3662-4652-a84d-04621cb9f709/thumbs/inside/1280x960/png/proxmox.webp"
+                                    alt="Proxmox VE" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">Proxmox VE</h2>
-                                <p>A complete open-source server management platform for enterprise virtualization, combining KVM and LXC technologies.</p>
-                                <div class="card-actions justify-end">
+                                <p>A complete open-source server management platform for enterprise virtualization,
+                                    combining KVM and LXC technologies.</p>
+                                <div class="card-actions justify-center">
                                     <a href="https://www.proxmox.com/en/" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png" alt="Docker" class="object-contain h-40" /></figure>
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://1000logos.net/wp-content/uploads/2021/11/Docker-Logo-2013.png"
+                                    alt="Docker" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">Docker</h2>
-                                <p>A platform designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all parts it needs.</p>
-                                <div class="card-actions justify-end">
+                                <p>A platform designed to make it easier to create, deploy, and run applications by
+                                    using containers. Containers allow a developer to package up an application with all
+                                    parts it needs.</p>
+                                <div class="card-actions justify-center">
                                     <a href="https://www.docker.com/" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>
                         </div>
-                        <div class="card w-96 bg-base-100 shadow-xl">
-                            <figure class='my-6'><img src="https://www.parallels.com/static/pl/fileadmin/res/img/about/brand/PDFM-icon.png" alt="Parallels" class="object-contain h-40" /></figure>
+                        <div class="card w-full max-w-xs bg-base-100 shadow-xl">
+                            <figure class="my-6"><img
+                                    src="https://www.parallels.com/static/pl/fileadmin/res/img/about/brand/PDFM-icon.png"
+                                    alt="Parallels" class="object-contain h-40" /></figure>
                             <div class="card-body">
                                 <h2 class="card-title">Parallels</h2>
-                                <p>A cross-platform virtualization solution that allows users to run Windows applications on a Mac, providing seamless integration and high performance.</p>
-                                <div class="card-actions justify-end">
+                                <p>A cross-platform virtualization solution that allows users to run Windows
+                                    applications on a Mac, providing seamless integration and high performance.</p>
+                                <div class="card-actions justify-center">
                                     <a href="https://www.parallels.com/" class="btn btn-primary">Learn More</a>
                                 </div>
                             </div>

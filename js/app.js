@@ -155,19 +155,36 @@ function resetToHome() {
 
 // Theme switcher with GSAP
 const innerBody = document.getElementById("inner-body");
-document.getElementById("theme-controller").addEventListener("change", () => {
-  gsap.to(innerBody, {
-    opacity: 0,
-    duration: 0.3,
-    onComplete: () => {
-      innerBody.setAttribute(
-        "data-theme",
-        document.getElementById("theme-controller").checked ? "dark" : "pastel"
-      );
-      gsap.to(innerBody, { opacity: 1, duration: 0.3 });
-    },
-  });
+const themeController = document.getElementById("theme-controller");
+
+// Function to apply theme
+function applyTheme(theme) {
+    innerBody.setAttribute("data-theme", theme);
+    themeController.checked = (theme === "dark");
+    gsap.to(innerBody, { opacity: 1, duration: 0.3 });
+}
+
+// Event listener for theme change
+themeController.addEventListener("change", () => {
+    const newTheme = themeController.checked ? "dark" : "pastel";
+    
+    // Save the theme choice to localStorage
+    localStorage.setItem("theme", newTheme);
+    
+    // Animate and change theme
+    gsap.to(innerBody, {
+        opacity: 0,
+        duration: 0.3,
+        onComplete: () => applyTheme(newTheme)
+    });
 });
+
+// Check for saved theme in localStorage on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const savedTheme = localStorage.getItem("theme") || "pastel"; // Default to 'pastel' if nothing is saved
+    applyTheme(savedTheme);
+});
+
 
 // Load terms content dynamically with pagination
 async function loadTermsContent(page = 1, termsPerPage = 6) {

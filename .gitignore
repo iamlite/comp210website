@@ -6,6 +6,7 @@ dist
 .cache
 .env
 .DS_Store
+.history/*
 .history/
 .vscode/
 .DS_Store

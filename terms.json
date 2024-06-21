@@ -2,101 +2,101 @@
   {
     "number": 1,
     "term": "Computer",
-    "definition": "An electronic device for storing and processing data."
+    "definition": "An electronic device capable of performing a variety of tasks by processing, storing, and outputting data. Computers can run a range of applications, from simple calculators to complex operating systems, and are essential tools in modern society for both personal and professional use."
   },
   {
     "number": 2,
     "term": "Input",
-    "definition": "The data that is entered into a computer system."
+    "definition": "The data or signals that are entered into a computer system from external sources, such as keyboards, mice, scanners, or sensors. Input is the first step in data processing, allowing the computer to receive information that will be processed and used for various operations."
   },
   {
     "number": 3,
     "term": "Processing",
-    "definition": "The manipulation of data by a computer."
+    "definition": "The act of manipulating, calculating, or organizing data by a computer's central processing unit (CPU) to convert input data into meaningful output. Processing involves a series of operations like arithmetic calculations, logical comparisons, and data transformation."
   },
   {
     "number": 4,
     "term": "Output",
-    "definition": "The information produced by a computer after processing."
+    "definition": "The information produced by a computer after it has processed input data. Output can take various forms, including text, images, audio, or other forms of data presentation, and can be delivered through devices like monitors, printers, speakers, or other display units."
   },
   {
     "number": 5,
     "term": "Storage",
-    "definition": "The retention of data in a computer system."
+    "definition": "The retention and preservation of data within a computer system. Storage can be temporary, as with RAM (Random Access Memory), or permanent, as with hard drives, SSDs (Solid State Drives), and other media. It allows data to be retrieved and used at a later time."
   },
   {
     "number": 6,
     "term": "Communications",
-    "definition": "The transmission of data between computer systems."
+    "definition": "The transmission and reception of data between computer systems or devices. Communications enable networking and data exchange over various media, including wired and wireless connections, the internet, and local area networks (LANs)."
   },
   {
     "number": 7,
     "term": "Data",
-    "definition": "Raw facts and figures without context."
+    "definition": "Raw facts, figures, and symbols that are collected and stored but have not yet been processed to convey any specific meaning. Data serves as the foundation for creating information once it is processed and analyzed."
   },
   {
     "number": 8,
     "term": "Information",
-    "definition": "Data that has been processed and has meaning."
+    "definition": "Data that has been processed, organized, or structured in a way that provides meaningful insights or knowledge. Information is used to make decisions, solve problems, and understand patterns or trends."
   },
   {
     "number": 9,
     "term": "Hardware",
-    "definition": "The physical components of a computer system."
+    "definition": "The physical components of a computer system, including the central processing unit (CPU), memory, storage devices, input/output (I/O) devices, and peripheral equipment. Hardware forms the tangible part of computing that interacts with software to perform tasks."
   },
   {
     "number": 10,
     "term": "Software",
-    "definition": "The programs and other operating information used by a computer."
+    "definition": "The programs, applications, and operating systems that instruct a computer on how to perform specific tasks. Software can be divided into system software, which manages hardware and basic functions, and application software, which performs user-driven tasks."
   },
   {
     "number": 11,
     "term": "Operating System",
-    "definition": "The software that supports a computer's basic functions."
+    "definition": "The primary software that manages computer hardware and software resources, providing services and a platform for application programs. It controls basic functions such as file management, memory management, process scheduling, and user interface."
   },
   {
     "number": 12,
     "term": "Boot",
-    "definition": "The process of starting up a computer and loading the operating system."
+    "definition": "The process of starting up a computer and loading its operating system from a powered-off state. This involves initializing hardware components and executing a sequence of operations to prepare the system for use."
   },
   {
     "number": 13,
     "term": "Thin Client",
-    "definition": "A lightweight computer that relies on a server for data processing."
+    "definition": "A lightweight computing device that relies on a central server for processing power and storage. Thin clients are often used in environments where centralized management and low-cost hardware are priorities, such as in business or educational settings."
   },
   {
     "number": 14,
     "term": "Application Software",
-    "definition": "Programs designed to perform specific tasks for users."
+    "definition": "Programs designed to help users perform specific tasks or activities, such as word processing, spreadsheet calculations, web browsing, or graphic design. Application software is built to address user needs and enhance productivity."
   },
   {
     "number": 15,
     "term": "Embedded Computer",
-    "definition": "A computer that is integrated into other devices to perform specific functions."
+    "definition": "A specialized computer system integrated into other devices to perform dedicated functions. Embedded computers are found in a wide range of products, including automobiles, home appliances, industrial machines, and consumer electronics."
   },
   {
     "number": 16,
     "term": "Mobile Device",
-    "definition": "A portable computing device such as a smartphone or tablet."
+    "definition": "A portable electronic device, such as a smartphone or tablet, designed for mobility and typically equipped with wireless connectivity, touchscreens, and various sensors. Mobile devices allow users to access information, communicate, and perform tasks on the go."
   },
   {
     "number": 17,
     "term": "Smartphone",
-    "definition": "A mobile phone with advanced features and computing capability."
+    "definition": "A mobile phone with advanced features and computing capabilities, including internet access, multimedia functionality, and support for a wide range of applications. Smartphones combine communication, entertainment, and productivity tools in a single device."
   },
   {
     "number": 18,
     "term": "Media Tablet",
-    "definition": "A portable touchscreen device used for multimedia consumption."
+    "definition": "A portable touchscreen device used primarily for multimedia consumption, such as watching videos, reading e-books, and browsing the internet. Media tablets often have larger screens than smartphones and are optimized for entertainment and media use."
   },
   {
     "number": 19,
     "term": "Personal Computer",
-    "definition": "A general-purpose computer designed for individual use."
+    "definition": "A general-purpose computer designed for individual use, typically consisting of a desktop or laptop. Personal computers are used for a wide range of tasks, from work and education to gaming and personal projects."
   },
   {
     "number": 20,
     "term": "Portable Computer",
-    "definition": "A computer designed to be easily moved and used in various locations."
+    "definition": "A computer designed for mobility, such as a laptop or notebook. Portable computers allow users to carry their computing environment with them and work from various locations, providing the convenience of both power and portability."
   }
 ]

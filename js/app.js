@@ -20,12 +20,11 @@ typewriter
   .typeString("Brace yourself for knowledge.")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("<em>Ready to dive in?</em>")
+  .typeString("Ready to dive in?")
   .pauseFor(500)
   .typeString(" <strong>Let's go!</strong>")
   .pauseFor(1000)
   .start();
-
 
 
 // Confetti Effect
@@ -171,7 +170,7 @@ document.getElementById("theme-controller").addEventListener("change", () => {
 });
 
 // Load terms content dynamically with pagination
-async function loadTermsContent(page = 1, termsPerPage = 9) {
+async function loadTermsContent(page = 1, termsPerPage = 6) {
   try {
     const response = await fetch('terms.json');
     const terms = await response.json();
@@ -190,12 +189,14 @@ async function loadTermsContent(page = 1, termsPerPage = 9) {
       const termElement = document.createElement('div');
       termElement.classList.add('m-4');
       termElement.innerHTML = `
-        <div class="card bg-base-100 shadow-xl">
-          <div class="card-body">
-            <h2 class="card-title">${term.number}. ${term.term}</h2>
-            <p class="text-xs">${term.definition}</p>
+      <div class="card shadow-md flex flex-col min-h-[300px] bg-base-200">
+          <div class="card-body flex flex-col h-full">
+              <h2 class="card-title">${term.number}. ${term.term}</h2>
+              <div class="flex-grow"></div>
+              <p class="text-xs">${term.definition}</p>
           </div>
-        </div>`;
+      </div>`;  
+  
       termsContainer.appendChild(termElement);
     });
 
@@ -229,3 +230,5 @@ document.addEventListener("DOMContentLoaded", () => {
     resetToHome();
   }
 });
+
+

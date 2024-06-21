@@ -21,12 +21,15 @@ document.addEventListener("click", launchConfetti);
 
 // Function to update menu links dynamically
 function updateMenuLinks(currentPage) {
+  console.log("Updating links for currentPage:", currentPage);
   const links = document.querySelectorAll("#links a");
   const homeLink = document.getElementById("home-link");
   const tl = gsap.timeline();
 
   links.forEach(link => {
-    if (link.getAttribute("href").includes(currentPage)) {
+    const linkHref = link.getAttribute("href").split('/').pop().split('.').shift();
+    console.log("Link Href:", linkHref);
+    if (linkHref === currentPage) {
       link.style.opacity = 0;
       link.classList.add("hidden");
     } else {
@@ -42,8 +45,8 @@ function updateMenuLinks(currentPage) {
 document.querySelectorAll("#links a").forEach(link => {
   link.addEventListener('click', async (event) => {
     event.preventDefault();
-    const url = event.target.href;
-    const currentPage = url.split('/').pop().split('.').shift();
+    const url = new URL(event.target.href);
+    const currentPage = url.pathname.split('/').pop().split('.').shift();
     const menuWrapper = document.getElementById("menu-wrapper");
     const contentDiv = document.getElementById("content");
     const typerDiv = document.getElementById("typer");
@@ -54,7 +57,7 @@ document.querySelectorAll("#links a").forEach(link => {
       resetToHome();
     } else {
       gsap.to([menuWrapper, contentDiv], { opacity: 0, duration: 0.5, onComplete: async () => {
-        const response = await fetch(url);
+        const response = await fetch(url.pathname);
         const text = await response.text();
         const tempDiv = document.createElement('div');
         tempDiv.innerHTML = text;
@@ -192,7 +195,7 @@ document.getElementById('home-link').addEventListener('click', (event) => {
 
 // This ensures that the initial state is set correctly when the document is loaded
 document.addEventListener("DOMContentLoaded", () => {
-  const currentPage = window.location.pathname.split("/").pop().split(".").shift();
+  const currentPage = window.location.pathname.split("/").pop().split(".").shift() || "index";
   console.log("Current Page on Load:", currentPage);
   updateMenuLinks(currentPage);
   if (currentPage === "index") {
